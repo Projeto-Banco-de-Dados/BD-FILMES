@@ -1,62 +1,54 @@
-# Projeto de Banco de Dados IMDB Top 1000 (Terminal Interativo)
+# Projeto de Banco de Dados: IMDB Top 1000 (Terminal Interativo)
 
-Este repositório contém um projeto de banco de dados simplificado baseado no dataset IMDB Top 1000 Filmes e Séries, com foco em um menu interativo em terminal para interação com o banco de dados.
+**Disciplina**: Banco de Dados  
+**Professor**: Vinicius von Glehn De Filippo  
+**Equipe**: [Nomes completos dos integrantes]  
+**Data de Entrega**: 08/06/2024  
 
-## Descrição do Projeto
+---
 
-O projeto tem como objetivo principal demonstrar a criação e interação com um banco de dados relacional para armazenar informações sobre os 1000 melhores filmes e séries do IMDB. A interação com o banco de dados é feita através de um menu interativo em terminal, permitindo ao usuário realizar operações como listar filmes, diretores e atores, além de buscar informações específicas.
+## 📌 Descrição do Projeto
+Aplicação em terminal Python que interage com um banco de dados relacional (Microsoft SQL Server) baseado no dataset **IMDB Top 1000 Movies and TV Shows**. O sistema permite:
+- Consulta e filtragem de filmes por diretor, ator, avaliação e gênero.
+- Operações CRUD (opcional, se implementado).
+- Geração de relatórios (ex: filmes com melhor avaliação).
 
-O banco de dados foi modelado para o Microsoft SQL Server e inclui tabelas para Filmes, Diretores, Atores e uma tabela de relacionamento para Filmes e Atores.
+**Diferencial**: Interface intuitiva em terminal, modelagem relacional personalizada e integração direta com SQL Server.
 
-## Base de Dados
+---
 
-O projeto utiliza o dataset "IMDB Dataset of Top 1000 Movies and TV Shows" disponível no Kaggle:
-[https://www.kaggle.com/datasets/harshitshankhdhar/imdb-dataset-of-top-1000-movies-and-tv-shows](https://www.kaggle.com/datasets/harshitshankhdhar/imdb-dataset-of-top-1000-movies-and-tv-shows)
+## 🛠️ Tecnologias e Requisitos
+- **SGBD**: Microsoft SQL Server (obrigatório)
+- **Linguagem**: Python 3.8+
+- **Bibliotecas**: `pandas`, `pyodbc`
+- **Base de Dados**: [IMDB Dataset of Top 1000 Movies and TV Shows](https://www.kaggle.com/datasets/harshitshankhdhar/imdb-dataset-of-top-1000-movies-and-tv-shows) (300+ registros)
+- **Plataforma**: Local (terminal) ou Web (se adaptado).
 
-## Requisitos
+---
 
-- Python 3.8+
-- Microsoft SQL Server
-- Bibliotecas Python: `pandas`, `pyodbc`
+## 📋 Entregáveis
+1. **DER (Diagrama Entidade-Relacionamento)**  
+   ![DER](sql/DER_IMDB.png) *(adicione a imagem do diagrama na pasta `sql/`)*
+2. **Scripts SQL**:
+   - `create_tables.sql`: Criação das tabelas (`Filmes`, `Diretores`, `Atores`, `Filme_Ator`).
+   - `insert_data.sql`: Inserção dos dados do dataset.
+3. **Vídeo de Apresentação**: [Link do YouTube](https://youtu.be/seulink) (5 minutos máx.).
+4. **Repositório GitHub**:
+   - Código-fonte (`python/`).
+   - Scripts SQL (`sql/`).
+   - Documentação (este README).
 
-## Instruções para Instalação e Execução
+---
 
-1. **Clone este repositório:**
+## 🚀 Instalação e Execução
 
+### Pré-requisitos
+- Instância do **Microsoft SQL Server** ativa.
+- Banco de dados criado (ex: `IMDB`).
+
+### Passo a Passo
+1. **Clone o repositório**:
    ```bash
    git clone https://github.com/seu-usuario/imdb-terminal-project.git
    cd imdb-terminal-project
-   ```
-
-   _(Nota: Substitua `seu-usuario` pelo seu nome de usuário do GitHub e `imdb-terminal-project` pelo nome do seu repositório.)_
-
-2. **Instale as dependências Python:**
-
-   ```bash
-   pip install pandas pyodbc
-   ```
-
-3. **Configure o Microsoft SQL Server:**
-
-   - Certifique-se de ter uma instância do Microsoft SQL Server em execução.
-   - Crie um banco de dados chamado `IMDB`.
-   - Execute os scripts SQL localizados na pasta `sql/` na seguinte ordem:
-     1. `create_tables.sql`: Cria as tabelas necessárias (`Diretores`, `Atores`, `Filmes`, `Filme_Ator`).
-     2. `insert_data.sql`: Insere os dados do dataset IMDB nas tabelas criadas.
-
-4. **Configure a conexão com o banco de dados no Python:**
-
-   - Acesse os arquivos da pasta `python/`.
-   - Localize a linha onde a variável `conn` é definida com `pyodbc.connect(...)`.
-   - Atualize os parâmetros de conexão conforme a sua configuração do SQL Server:
-     - `SERVER`: nome do servidor e instância (ex: `localhost\\SQLEXPRESS`)
-     - `DATABASE`: nome do banco de dados (ex: `IMDB`)
-
-5. **Execute a aplicação do menu interativo:**
-
-   ```bash
-   cd python
-   python menu_interativo.py
-   ```
-
-   O menu interativo será exibido no terminal, permitindo que você explore os dados do IMDB.
+   
