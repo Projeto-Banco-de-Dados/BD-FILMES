@@ -52,6 +52,6 @@ Aplicação em terminal Python que interage com um banco de dados relacional (Mi
 ### Passo a Passo
 1. **Clone o repositório**:
    ```bash
-   git clone https://github.com/seu-usuario/imdb-terminal-project.git
+   git clone [https://github.com/seu-usuario/imdb-terminal-project.git](https://github.com/Projeto-Banco-de-Dados/BD-FILMES.git)
    cd imdb-terminal-project
    
