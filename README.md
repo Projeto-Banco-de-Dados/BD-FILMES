@@ -30,16 +30,11 @@ Aplicação em terminal Python que interage com um banco de dados relacional (Mi
 ---
 
 ## 📋 Entregáveis
-1. **DER (Diagrama Entidade-Relacionamento)**  
-   ![DER](sql/DER_IMDB.png) *(adicione a imagem do diagrama na pasta `sql/`)*
-2. **Scripts SQL**:
-   - `create_tables.sql`: Criação das tabelas (`Filmes`, `Diretores`, `Atores`, `Filme_Ator`).
-   - `insert_data.sql`: Inserção dos dados do dataset.
-3. **Vídeo de Apresentação**: [Link do YouTube](https://youtu.be/seulink) (5 minutos máx.).
-4. **Repositório GitHub**:
-   - Código-fonte (`python/`).
-   - Scripts SQL (`sql/`).
-   - Documentação (este README).
+
+**Vídeo de Apresentação**: [Link do YouTube](https://youtu.be/seulink) (5 minutos máx.).
+
+**Github do Projeto**: https://github.com/Projeto-Banco-de-Dados
+
 
 ---
 
