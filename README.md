@@ -1,7 +1,9 @@
 # Projeto de Banco de Dados: IMDB Top 1000 (Terminal Interativo)
 
 **Disciplina**: Banco de Dados  
-**Professor**: Vinicius von Glehn De Filippo  
+
+**Professor**: Vinicius von Glehn De Filippo
+
 **Equipe**: Eduardo Amaral, Pedro Ramalho, Moreno Jones e Lucas Telles
 
 **Data de Entrega**: 08/06/2024  
